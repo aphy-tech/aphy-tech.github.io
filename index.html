@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>微信群规</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        
-        h1 {
-            text-align: center;
-        }
-        
-        ol {
-            list-style-type: decimal;
-            margin-left: 20px;
-        }
-    </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* CSS样式，使页面内容居中 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    /* 美化文字说明样式 */
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    /* 美化按钮样式 */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    <h1>微信群规</h1>
-    <ol>
-        <li>规则一：XXXXXXXXXXXXXXXX</li>
-        <li>规则二：XXXXXXXXXXXXXXXX</li>
-        <li>规则三：XXXXXXXXXXXXXXXX</li>
-        <li>规则四：XXXXXXXXXXXXXXXX</li>
-        <!-- 按需添加更多规则 -->
-    </ol>
+  <div>
+    <h1>文字说明</h1>
+    <p>这是一个示例文字说明。</p>
+    <div class="button-container">
+      <button onclick="redirectToURL()">跳转</button>
+    </div>
+
+    <script>
+      function redirectToURL() {
+        // 在此处替换为你要跳转的URL
+        var url = 'https://www.example.com';
+
+        // 在新标签页中打开URL
+        window.open(url, '_blank');
+      }
+    </script>
+  </div>
 </body>
 </html>
