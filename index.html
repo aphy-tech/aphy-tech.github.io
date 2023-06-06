@@ -46,25 +46,39 @@
     button:hover {
       background-color: #45a049;
     }
+
+    /* 添加内容区域的边框样式 */
+    .content-container {
+      border: 2px solid #999;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 400px;
+      margin-bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <div>
-    <h1>文字说明</h1>
-    <p>这是一个示例文字说明。</p>
+  <div class="content-container">
+    <h1>上部文字说明</h1>
+    <p>这是上部示例文字说明。</p>
     <div class="button-container">
-      <button onclick="redirectToURL()">跳转</button>
+      <button onclick="redirectToURL('https://www.example.com')">跳转</button>
     </div>
-
-    <script>
-      function redirectToURL() {
-        // 在此处替换为你要跳转的URL
-        var url = 'https://www.example.com';
-
-        // 在新标签页中打开URL
-        window.open(url, '_blank');
-      }
-    </script>
   </div>
+
+  <div class="content-container">
+    <h1>下部文字说明</h1>
+    <p>这是下部示例文字说明。</p>
+    <div class="button-container">
+      <button onclick="redirectToURL('https://www.another-example.com')">跳转</button>
+    </div>
+  </div>
+
+  <script>
+    function redirectToURL(url) {
+      // 在新标签页中打开URL
+      window.open(url, '_blank');
+    }
+  </script>
 </body>
 </html>
